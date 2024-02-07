@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="input-form-container">
     <form action="" @submit.prevent="handleSubmit">
         <div class="form-container">
             <div class="form-content">
@@ -27,19 +27,36 @@
 
 <script setup>
 import { ref } from 'vue';
-import { store } from '@/store/store';
+import { store, calculate } from '@/store/store';
 
-const total = ref('')
-const tip = ref('')
-const people = ref('')
+const total = ref(0)
+const tip = ref(0)
+const people = ref(0)
 
 const handleSubmit = () => {
     store.params.total = total
     store.params.tip = tip
+    store.params.people = people
+    calculate()
 }
 
 </script>
 
 <style scoped>
+    .input-form-container {
+        color: #fff;
+        font-size: 1.6rem;
+    }
 
+    input {
+        margin: 0 .4rem .7rem .8rem;
+    }
+
+    .form-content {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    
 </style>

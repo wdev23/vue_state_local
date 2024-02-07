@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app_container">
     <SplitBillView />
   </div>
 </template>
