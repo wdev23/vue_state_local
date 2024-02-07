@@ -15,5 +15,6 @@ import PeopleView from './PeopleView.vue';
 <style scoped>
   .container {
     display: flex;
+    color: #fff;
   }
 </style>

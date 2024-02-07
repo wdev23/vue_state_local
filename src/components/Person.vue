@@ -3,7 +3,7 @@
         <div class="person-number">
             Person {{ props.numberOfPerson }}
         </div>
-        <div class="peson-to-pay">
+        <div class="person-to-pay">
             {{
                 new Intl.NumberFormat('en-US', {
                     style: 'currency',
@@ -50,5 +50,24 @@ const handleChange = (e) => {
 
 .person-no-paid {
     border: solid 3px #ccc;
+}
+
+.person-number {
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.person-to-pay {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: yellowgreen;
+}
+
+.paid {
+    background-color: #343f68;
+    padding: 10px;
 }
 </style>

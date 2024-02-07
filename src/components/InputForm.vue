@@ -53,10 +53,23 @@ const handleSubmit = () => {
     }
 
     .form-content {
-        display: flex;
+        /* display: flex;
         align-items: center;
-        justify-content: right;
+        justify-content: left; */
     }
 
+    .btn_submit input {
+        background: 0;
+        padding: 6px;
+        color: #fff;
+        transition: all .45s ease;
+        border-radius: 4px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    .btn_submit input:hover {
+        background-color: #6f2232;
+    }
     
 </style>
